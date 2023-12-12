@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reveal Content</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(52, 32, 71);
+        }
+
+        .heading{
+            display: block;
+            text-align: center;
+        }
+
+        .container{
+            display: flex;
+            /* border: 2px solid black; */
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 10px */
+            margin: 30px auto;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .box{
+            border: 2px solid black;
+            width: 50vw;
+            height: 50vh;
+            color: white;
+            border-radius: 10px;
+            background-color: rgb(52, 32, 71);
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .reveal-btn{
+        align-items: center;
+        color: white;
+        cursor: pointer;
+
+        }
+        .hidden-content{
+            display: none;
+        }
+        .hidden-content.reveal-btn{
+            display: block;
+            width: 15000px;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class="heading">Reveal Content JS Event </h1>
+
+    <div class="container">
+        <button class="reveal-btn box">Reveal More</button>
+        <div class="hidden-content box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi officiis molestiae minima alias aliquid dolore totam. Explicabo optio, ducimus corporis exercitationem repellat suscipit accusantium rerum nisi rem? Voluptatum, soluta repudiandae!
+            Ducimus debitis enim pariatur facere tempore error necessitatibus neque ipsam sunt, quidem voluptatibus id deleniti alias est veritatis mollitia aperiam nemo earum excepturi! Ea aliquid ratione omnis neque earum expedita.
+            Eaque velit, voluptatem magnam doloremque, illum maxime dolore sit perferendis veritatis voluptates fuga culpa dolores consectetur harum ab? Placeat sunt distinctio minima quod. Sed a amet molestiae vitae quam nobis!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi deleniti odio libero blanditiis tempora quaerat! Corporis facilis magnam quos ratione iusto possimus sunt? Numquam vitae facilis quod suscipit ullam! Sit?
+            Voluptas odit tempore assumenda illo ex recusandae ipsa magnam saepe! Tempore doloribus quam voluptates, ex voluptatem, dolores explicabo quidem quo repellendus quibusdam nihil placeat, deserunt hic sint in quas saepe!
+            Dolore iste nostrum possimus nulla numquam fugit temporibus reiciendis minus corrupti, qui excepturi recusandae accusantium distinctio? Qui rerum deleniti cupiditate corporis sint ea, quas sed similique placeat commodi veniam sunt?
+            Optio, minus nisi? Corporis assumenda voluptatum, quos minima et cupiditate odit. Quas modi dolorem molestias aliquam excepturi nobis nulla veniam cumque eveniet saepe voluptatem quae odit vel, quos quisquam veritatis!
+            Nulla enim quae distinctio voluptates cupiditate labore quibusdam soluta, sed a aspernatur nostrum sunt incidunt laborum rem error culpa et asperiores doloremque consequatur. Debitis, vel consectetur? Labore, maxime suscipit! Possimus!
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
